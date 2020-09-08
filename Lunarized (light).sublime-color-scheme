@@ -1,16 +1,16 @@
 {
-    "name": "Solarized (dark)",
+    "name": "Solarized (light)",
     "author": "Koen Lageveen",
     "variables":
     {
-        "base03":  "#002b36",
-        "base02":  "#073642",
-        "base01":  "#586e75",
-        "base00":  "#657b83",
-        "base0":   "#839496",
-        "base1":   "#93a1a1",
-        "base2":   "#eee8d5",
-        "base3":   "#fdf6e3",
+        "base03":  "#363636",
+        "base02":  "#424242",
+        "base01":  "#757575",
+        "base00":  "#838383",
+        "base0":   "#969696",
+        "base1":   "#a1a1a1",
+        "base2":   "#d5d5d5",
+        "base3":   "#e3e3e3",
         "yellow":  "#b58900",
         "orange":  "#cb4b16",
         "red":     "#dc322f",
@@ -22,31 +22,31 @@
     },
     "globals":
     {
-        "background": "var(base03)",
-        "foreground": "var(base0)",
-        "line_highlight": "var(base02)",
-        "gutter": "var(base02)",
-        "minimap_border": "var(base02)",
+        "background": "var(base3)",
+        "foreground": "var(base00)",
+        "line_highlight": "var(base2)",
+        "gutter": "var(base2)",
+        "minimap_border": "var(base2)",
 
-        "caret": "var(base2)",
-        "block_caret": "var(base3)",
-        "invisibles": "var(base01)",
+        "caret": "var(base02)",
+        "block_caret": "var(base03)",
+        "invisibles": "var(base1)",
         "misspelling": "var(red)",
 
-        "highlight": "var(base01)",
-        "find_highlight": "var(base02)",
-        "find_highlight_foreground": "var(base3)",
+        "highlight": "var(base1)",
+        "find_highlight": "var(base2)",
+        "find_highlight_foreground": "var(base03)",
 
-        "accent": "var(blue)",
+        "accent": "var(yellow)",
         "fold_marker": "var(yellow)",
 
-        "guide": "var(base02)",
-        "active_guide": "var(base01)",
-        "stack_guide": "var(base02)",
+        "guide": "var(base2)",
+        "active_guide": "var(base1)",
+        "stack_guide": "var(base2)",
 
-        "selection": "color(var(base01) blend(var(base03) 25%))",
-        "selection_border": "color(var(base01) blend(var(base03) 50%))",
-        "inactive_selection": "var(base02)",
+        "selection": "color(var(base1) blend(var(base3) 25%))",
+        "selection_border": "color(var(base1) blend(var(base3) 50%))",
+        "inactive_selection": "var(base2)",
 
         "brackets_options": "underline",
         "brackets_foreground": "var(green)",
@@ -55,7 +55,7 @@
         "tags_options": "stippled_underline",
         "tags_foreground": "var(green)",
 
-        "shadow": "color(var(base03) blend(#000 75%))",
+        "shadow": "var(base1)",
         "shadow_width": "4",
 
         "line_diff_added" : "var(green)",
@@ -66,7 +66,7 @@
         {
             "name": "Comment",
             "scope": "comment, meta.documentation",
-            "foreground": "var(base01)"
+            "foreground": "var(base1)"
         },
         {
             "name": "String",
@@ -116,7 +116,7 @@
         {
             "name": "Assignment, Comparision Operators",
             "scope": "keyword.operator.comparison, keyword.operator.assignment",
-            "foreground": "var(base0)"
+            "foreground": "var(base00)"
         },
         {
             "name": "Arithmetical Operators",
@@ -131,7 +131,7 @@
         {
             "name": "Storage modifier",
             "scope": "storage.modifier",
-            "foreground": "var(base1)"
+            "foreground": "var(base01)"
         },
         {
             "name": "Class",
@@ -190,7 +190,7 @@
         {
             "name": "Tag start/end",
             "scope": "punctuation.definition.tag.html, punctuation.definition.tag.begin, punctuation.definition.tag.end",
-            "foreground": "var(base01)"
+            "foreground": "var(base1)"
         },
         {
             "name": "Library function",
@@ -220,7 +220,7 @@
         {
             "name": "Invalid",
             "scope": "invalid",
-            "background": "color(var(red) blend(var(base03) 30%))",
+            "background": "color(var(red) blend(var(base3) 30%))",
             "foreground": "var(red)"
         },
         {
@@ -231,7 +231,7 @@
         {
             "name": "Quotes",
             "scope": "punctuation.definition.string",
-            "foreground": "var(base0)"
+            "foreground": "var(base00)"
         },
         {
             "name": "[]",
@@ -241,7 +241,7 @@
         {
             "name": "(),{}",
             "scope": "meta.brace.round, meta.brace.curly, punctuation.section, punctuation.section.block, punctuation.definition.parameters, punctuation.section.group",
-            "foreground": "var(base0)"
+            "foreground": "var(base00)"
         },
         {
             "name": "CSS: Standard color value",
@@ -251,7 +251,7 @@
         {
             "name": "CSS: Selector > [] and non-spec tags",
             "scope": "meta.selector.css",
-            "foreground": "var(base0)"
+            "foreground": "var(base00)"
         },
         {
             "name": "CSS: Tag",
@@ -286,7 +286,7 @@
         {
             "name": "HTML: =",
             "scope": "text.html.basic meta.tag.other.html, text.html.basic meta.tag.any.html, text.html.basic meta.tag.block.any, text.html.basic meta.tag.inline.any, text.html.basic meta.tag.structure.any.html, text.html.basic source.js.embedded.html, punctuation.separator.key-value.html",
-            "foreground": "var(base0)"
+            "foreground": "var(base00)"
         },
         {
             "name": "HTML: something=",
@@ -421,12 +421,12 @@
         {
             "name": "Shell: meta scope in loop",
             "scope": "meta.scope.for-in-loop.shell, variable.other.loop.shell",
-            "foreground": "var(base1)"
+            "foreground": "var(base01)"
         },
         {
             "name": "Shell: Meta Block",
             "scope": "meta.scope.case-block.shell, meta.scope.case-body.shell",
-            "foreground": "var(base1)"
+            "foreground": "var(base01)"
         },
         {
             "name": "Shell: []",
@@ -446,7 +446,7 @@
         {
             "name": "diff: header",
             "scope": "meta.diff, meta.diff.header",
-            "foreground": "var(base01)"
+            "foreground": "var(base1)"
         },
         {
             "name": "diff: range",
@@ -507,12 +507,12 @@
         },
         {
             "scope": "meta.paragraph.markdown meta.dummy.line-break",
-            "background": "var(base01)"
+            "background": "var(base1)"
         },
         {
             "name": "SublimeBracketHighlighter",
             "scope": "brackethighlighter.all",
-            "foreground": "var(base01)"
+            "foreground": "var(base1)"
         },
         {
             "name": "Find In Files: File Name",
@@ -522,12 +522,12 @@
         {
             "name": "Find In Files: Line numbers",
             "scope": "constant.numeric.line-number.find-in-files",
-            "foreground": "var(base01)"
+            "foreground": "var(base1)"
         },
         {
             "name": "JavaScript Variables",
             "scope": "variable.other.readwrite.js, variable.other.object.js, variable.other.constant.js",
-            "foreground": "var(base0)"
+            "foreground": "var(base00)"
         }
     ]
 }
