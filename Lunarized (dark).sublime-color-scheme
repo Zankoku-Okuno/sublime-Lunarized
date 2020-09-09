@@ -25,7 +25,7 @@
 
         "type": "var(azure)",
         "function": "var(amber)",
-        "constant": "var(teal)",
+        "constant": "var(azure)",
         "magic": "var(rose)",
         "string": "var(violet)",
         "string_escape": "var(rose)",
@@ -173,7 +173,7 @@
         {
             "name": "Library class",
             "scope": "support, support.type, support.class",
-            "foreground": "var(function)"
+            "foreground": "var(purple)"
         },
         {
             "name": "Function name",
@@ -197,7 +197,7 @@
         },
         {
             "scope": "entity.name.section",
-            "foreground": "var(vermillion)"
+            "foreground": "var(azure)"
         },
         {
             "name": "Support.construct",
@@ -227,12 +227,12 @@
         {
             "name": "Exception",
             "scope": "support.type.exception",
-            "foreground": "var(vermillion)"
+            "foreground": "var(amber)"
         },
         {
             "name": "Special",
             "scope": "keyword.other.special-method",
-            "foreground": "var(vermillion)"
+            "foreground": "var(function)"
         },
         {
             "name": "Invalid",
@@ -293,7 +293,7 @@
         {
             "name": "CSS: @-rule",
             "scope": "keyword.control.at-rule",
-            "foreground": "var(vermillion)"
+            "foreground": "var(red)"
         },
         {
             "name": "Haskell: Variable",
@@ -323,12 +323,12 @@
         {
             "name": "Ruby: :symbol",
             "scope": "constant.other.symbol.ruby",
-            "foreground": "var(cyan)"
+            "foreground": "var(teal)"
         },
         {
             "name": "Ruby: Special Method",
             "scope": "keyword.other.special-method.ruby",
-            "foreground": "var(vermillion)"
+            "foreground": "var(rose)"
         },
         {
             "name": "PHP: Array()",
@@ -338,12 +338,12 @@
         {
             "name": "C: Preprocessor",
             "scope": "entity.name.function.preprocessor.c, meta.preprocessor.c.include, meta.preprocessor.macro.c",
-            "foreground": "var(vermillion)"
+            "foreground": "var(rose)"
         },
         {
             "name": "C: include",
             "scope": "meta.preprocessor.c.include string.quoted.other.lt-gt.include.c, meta.preprocessor.c.include punctuation.definition.string.begin.c, meta.preprocessor.c.include punctuation.definition.string.end.c",
-            "foreground": "var(cyan)"
+            "foreground": "var(teal)"
         },
         {
             "name": "Other: Removal",
@@ -353,7 +353,7 @@
         {
             "name": "Other: Add",
             "scope": "other.add",
-            "foreground": "var(cyan)"
+            "foreground": "var(teal)"
         },
         {
             "name": "Tex: {}",
@@ -373,7 +373,7 @@
         {
             "name": "Tex: {var}",
             "scope": "variable.parameter.function.latex",
-            "foreground": "var(vermillion)"
+            "foreground": "var(rose)"
         },
         {
             "name": "Tex: Math \\\\",
@@ -383,7 +383,7 @@
         {
             "name": "Tex: Constant Math",
             "scope": "text.tex.latex constant.other.math.tex, constant.other.general.math.tex, constant.other.general.math.tex, constant.character.math.tex",
-            "foreground": "var(cyan)"
+            "foreground": "var(teal)"
         },
         {
             "name": "Tex: Other Math String",
@@ -398,7 +398,7 @@
         {
             "name": "Tex: \\label",
             "scope": "keyword.control.label.latex, text.tex.latex constant.other.general.math.tex",
-            "foreground": "var(cyan)"
+            "foreground": "var(teal)"
         },
         {
             "name": "Tex: \\label { }",
@@ -413,17 +413,17 @@
         {
             "name": "Tex: Support Function Section",
             "scope": "support.function.section.latex",
-            "foreground": "var(vermillion)"
+            "foreground": "var(rose)"
         },
         {
             "name": "Tex: Support Function",
             "scope": "support.function.general.tex",
-            "foreground": "var(cyan)"
+            "foreground": "var(teal)"
         },
         {
             "name": "Tex: Reference Label",
             "scope": "keyword.control.ref.latex",
-            "foreground": "var(cyan)"
+            "foreground": "var(teal)"
         },
         {
             "name": "Python: storage",
@@ -516,7 +516,7 @@
         },
         {
             "scope": "markup.underline.link.markdown, meta.link.reference constant.other.reference.link.markdown",
-            "foreground": "var(cyan)"
+            "foreground": "var(teal)"
         },
         {
             "scope": "constant.other.reference.link.markdown",
@@ -534,7 +534,7 @@
         {
             "name": "Find In Files: File Name",
             "scope": "entity.name.filename.find-in-files",
-            "foreground": "var(cyan)"
+            "foreground": "var(teal)"
         },
         {
             "name": "Find In Files: Line numbers",
