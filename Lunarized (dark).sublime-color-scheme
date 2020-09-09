@@ -11,14 +11,26 @@
         "base1":   "#9da1a1",
         "base2":   "#edebe6",
         "base3":   "#fcfaf5",
+        "purple":     "#9c5eba",
         "rose":       "#d33682",
         "red":        "#dc322f",
         "vermillion": "#cb4b16",
-        "amber":      "#b58900",
+        "amber":      "#b38909",
         "chartreuse": "#859900",
+        "green":      "#61a512",
+        "teal":       "#2aa18d",
         "cyan":       "#2aa198",
         "azure":      "#2685c9",
         "violet":     "#6d71ca",
+
+        "type": "var(azure)",
+        "function": "var(amber)",
+        "constant": "var(teal)",
+        "magic": "var(rose)",
+        "string": "var(violet)",
+        "string_escape": "var(rose)",
+        "keyword": "var(green)",
+        "comment": "var(base01)",
     },
     "globals":
     {
@@ -49,16 +61,16 @@
         "inactive_selection": "var(base02)",
 
         "brackets_options": "underline",
-        "brackets_foreground": "var(chartreuse)",
+        "brackets_foreground": "var(green)",
         "bracket_contents_options": "stippled_underline",
-        "bracket_contents_foreground": "var(chartreuse)",
+        "bracket_contents_foreground": "var(green)",
         "tags_options": "stippled_underline",
-        "tags_foreground": "var(chartreuse)",
+        "tags_foreground": "var(green)",
 
         "shadow": "color(var(base03) blend(#000 75%))",
         "shadow_width": "4",
 
-        "line_diff_added" : "var(chartreuse)",
+        "line_diff_added" : "var(green)",
         "line_diff_modified" : "var(amber)"
     },
     "rules":
@@ -66,27 +78,27 @@
         {
             "name": "Comment",
             "scope": "comment, meta.documentation",
-            "foreground": "var(base01)"
+            "foreground": "var(comment)"
         },
         {
             "name": "String",
             "scope": "string",
-            "foreground": "var(cyan)"
+            "foreground": "var(string)"
         },
         {
             "name": "Regexp",
             "scope": "string.regexp",
-            "foreground": "var(cyan)"
+            "foreground": "var(string)"
         },
         {
             "name": "Escape \\ char",
             "scope": "constant.character.escape",
-            "foreground": "var(red)"
+            "foreground": "var(string_escape)"
         },
         {
             "name": "Number",
             "scope": "constant.numeric",
-            "foreground": "var(violet)"
+            "foreground": "var(magic)"
         },
         {
             "name": "Variable",
@@ -96,52 +108,62 @@
         {
             "name": "Variable Function",
             "scope": "variable.function",
-            "foreground": "var(amber)"
+            "foreground": "var(function)"
         },
         {
             "name": "Variable Language",
             "scope": "variable.language",
-            "foreground": "var(rose)"
+            "foreground": "var(function)"
         },
         {
             "name": "Keyword",
             "scope": "keyword",
-            "foreground": "var(chartreuse)"
+            "foreground": "var(keyword)"
         },
         {
             "name": "Import",
             "scope": "meta.import keyword, keyword.control.import, keyword.control.import.from, keyword.other.import, keyword.control.at-rule.include, keyword.control.at-rule.import",
-            "foreground": "var(vermillion)"
+            "foreground": "var(keyword)"
         },
         {
             "name": "Assignment, Comparision Operators",
             "scope": "keyword.operator.comparison, keyword.operator.assignment",
-            "foreground": "var(base0)"
+            "foreground": "var(keyword)"
         },
         {
             "name": "Arithmetical Operators",
             "scope": "keyword.operator.arithmetic",
-            "foreground": "var(vermillion)"
+            "foreground": "var(keyword)"
         },
         {
             "name": "Storage",
             "scope": "storage",
-            "foreground": "var(chartreuse)"
+            "foreground": "var(keyword)"
+        },
+        {
+            "name": "Storage Type",
+            "scope": "storage.type",
+            "foreground": "var(type)"
+        },
+        {
+            "name": "Definition Keyword",
+            "scope": "storage.type.function, storage.type.class",
+            "foreground": "var(keyword)"
         },
         {
             "name": "Storage modifier",
             "scope": "storage.modifier",
-            "foreground": "var(base1)"
+            "foreground": "var(keyword)"
         },
         {
             "name": "Class",
             "scope": "keyword.control.class, entity.name, entity.name.class, entity.name.type.class",
-            "foreground": "var(amber)"
+            "foreground": "var(function)"
         },
         {
             "name": "Inherited Class",
             "scope": "entity.other.inherited-class",
-            "foreground": "var(azure)"
+            "foreground": "var(type)"
         },
         {
             "name": "Attribute",
@@ -151,7 +173,7 @@
         {
             "name": "Library class",
             "scope": "support, support.type, support.class",
-            "foreground": "var(chartreuse)"
+            "foreground": "var(function)"
         },
         {
             "name": "Function name",
@@ -161,12 +183,17 @@
         {
             "name": "Variable start",
             "scope": "punctuation.definition.variable",
-            "foreground": "var(chartreuse)"
+            "foreground": "var(green)"
         },
         {
             "name": "Built-in constant",
             "scope": "constant, constant.language, meta.preprocessor",
-            "foreground": "var(amber)"
+            "foreground": "var(constant)"
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "foreground": "var(constant)"
         },
         {
             "scope": "entity.name.section",
@@ -176,11 +203,6 @@
             "name": "Support.construct",
             "scope": "support.function.construct, keyword.other.new",
             "foreground": "var(red)"
-        },
-        {
-            "name": "User-defined constant",
-            "scope": "constant.character, constant.other",
-            "foreground": "var(vermillion)"
         },
         {
             "name": "Tag name",
@@ -195,17 +217,12 @@
         {
             "name": "Library function",
             "scope": "support.function",
-            "foreground": "var(chartreuse)"
+            "foreground": "var(function)"
         },
         {
             "name": "Continuation",
             "scope": "punctuation.separator.continuation",
             "foreground": "var(red)"
-        },
-        {
-            "name": "Storage Type",
-            "scope": "storage.type",
-            "foreground": "var(azure)"
         },
         {
             "name": "Exception",
@@ -226,7 +243,7 @@
         {
             "name": "Quoted String",
             "scope": "string.quoted.double, string.quoted.single",
-            "foreground": "var(cyan)"
+            "foreground": "var(string)"
         },
         {
             "name": "Quotes",
@@ -236,7 +253,7 @@
         {
             "name": "[]",
             "scope": "meta.brace.square, punctuation.section.brackets",
-            "foreground": "var(azure)"
+            "foreground": "var(base0)"
         },
         {
             "name": "(),{}",
@@ -281,7 +298,7 @@
         {
             "name": "Haskell: Variable",
             "scope": "source.haskell variable",
-            "foreground": "var(amber)"
+            "foreground": "var(base0)"
         },
         {
             "name": "HTML: =",
@@ -296,7 +313,7 @@
         {
             "name": "Ruby: Special Method",
             "scope": "keyword.other.special-method.ruby",
-            "foreground": "var(chartreuse)"
+            "foreground": "var(green)"
         },
         {
             "name": "Ruby: Constant Other",
@@ -391,7 +408,7 @@
         {
             "name": "Tex: Function",
             "scope": "support.function.be.latex",
-            "foreground": "var(chartreuse)"
+            "foreground": "var(green)"
         },
         {
             "name": "Tex: Support Function Section",
@@ -411,7 +428,7 @@
         {
             "name": "Python: storage",
             "scope": "storage.type.class.python, storage.type.function.python, storage.modifier.global.python",
-            "foreground": "var(chartreuse)"
+            "foreground": "var(green)"
         },
         {
             "name": "Python: Support.exception",
@@ -436,7 +453,7 @@
         {
             "name": "Storage",
             "scope": "storage.modifier.c++",
-            "foreground": "var(chartreuse)"
+            "foreground": "var(green)"
         },
         {
             "name": "Perl: functions",
@@ -466,7 +483,7 @@
         {
             "name": "diff: inserted",
             "scope": "markup.inserted",
-            "foreground": "var(chartreuse)"
+            "foreground": "var(green)"
         },
         {
             "name": "Warning",
@@ -486,7 +503,7 @@
         {
             "name": "Markdown quote",
             "scope": "markup.quote",
-            "foreground": "var(chartreuse)"
+            "foreground": "var(green)"
         },
         {
             "name": "Markdown em",
@@ -528,6 +545,6 @@
             "name": "JavaScript Variables",
             "scope": "variable.other.readwrite.js, variable.other.object.js, variable.other.constant.js",
             "foreground": "var(base0)"
-        }
+        },
     ]
 }
